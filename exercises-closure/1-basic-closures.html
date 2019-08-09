@@ -59,7 +59,7 @@
   const two_returns = two();
   console.assert(two_returns === 2, "exercise 1", "b:", two_returns);
   const three = close_a_value(4);
-  const three_returns = null;
+  const three_returns = three();
   console.assert(three_returns === 4, "exercise 1", "c:", three_returns);
   const sum = three_returns * two_returns - one_returns; // fix this line to pass the assert
   console.assert(sum === 7, "exercise 1", "d");
