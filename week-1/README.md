@@ -6,7 +6,7 @@
 | :egg: __[closure: 0 & 1](../exercises-closure)__ |:green_heart:   | | | |
 | :egg: __[event loop: 1 & 2](../exercises-event-loop)__ |:green_heart: | | | |
 | :egg: __[promise practice](./promise-practice.md)__ | | | | | 
-| :egg: __[three-layer handlers](./three-layer-handlers)__ | | | | |
+| :egg: __[three-layer handlers](./three-layer-handlers)__ |:green_heart: | | | |
 | :hatching_chick: __[fetch data from APIs](./fetching-exercises)__ | | | | |
 | :hatching_chick: __[using BasicModel](./using-BasicModel.html)__ | | | | |
 
