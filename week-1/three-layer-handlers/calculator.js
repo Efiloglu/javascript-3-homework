@@ -1,25 +1,24 @@
 // --- data ---
 
-
 var results = [];
 
 // --- functions ---
 
 
 function add(a, b) {
-  return  "the sum of " + a + ' and ' + b;
+  return 'The sum of '+  a + ' and ' + b + ' is : ' + (a+b);
 }
 
 function subtract(a, b) {
-  return "the difference between " + a + ' and ' + b; 
+  return 'the difference between ' + a + ' and ' + b + ' is : ' + (a-b);
 }
 
 function multiply(a, b) {
-  return "the product of " + a + ' and ' + b;
+  return 'the product of ' + a + ' and ' + b + ' is : ' + (a*b);
 }
 
 function divide(a, b) {
-  return  "the quotient of " + a + ' and ' + b; 
+  return  'the quotient of ' + a + ' and ' + b + ' is : ' + (a/b);
 }
 
 
@@ -138,3 +137,4 @@ function results_handler() {
 
 var results_button = document.getElementById("results");
 results_button.addEventListener("click", results_handler);
+
