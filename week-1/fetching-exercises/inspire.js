@@ -7,7 +7,17 @@ function get_random() {
       http://quotes.rest/qod/random.json
     print the quote to the console
   */
-
+  const xhr = new XMLHttpRequest();
+  const url = 'http://quotes.rest/qod.json';
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status >= 200) {
+      const response = JSON.parse(xhr.response);
+      const p_quotes = response.contents.quotes[0].quote;
+      console.log(p_quotes);
+      }
+   };
+  xhr.open('get', url);
+  xhr.send();
 }
 document.getElementById("get-categories").addEventListener("click", get_categories);
 
@@ -21,7 +31,17 @@ function get_categories() {
     print the categories to the console using console.table
       https://developer.mozilla.org/en-US/docs/Web/API/Console/table
   */
-
+  const xhr = new XMLHttpRequest();
+  const url = 'http://quotes.rest/qod/categories.json';
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status >= 200) {
+      const response = JSON.parse(xhr.response);
+      const p_categories = response.contents.categories;
+      console.log(p_categories);
+      }
+   };
+  xhr.open('get', url);
+  xhr.send();
 }
 document.getElementById("get-categories").addEventListener("click", get_categories);
 
